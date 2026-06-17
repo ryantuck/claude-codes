@@ -96,6 +96,22 @@
   .card h2 { font-size: 1.1rem; margin-bottom: 0.35rem; letter-spacing: 0.02em; }
   .card h2::before { content: "$ "; color: var(--accent); }
   .card p { color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
+  .prompt {
+    margin-top: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background: rgba(0, 255, 156, 0.04);
+    border-left: 2px solid var(--accent2);
+    color: var(--text);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  .prompt::before {
+    content: "❯ prompt: ";
+    font-style: normal;
+    color: var(--accent2);
+    text-shadow: 0 0 6px rgba(255, 45, 149, 0.45);
+  }
   .card h2 a { color: inherit; text-decoration: none; }
   .card h2 a:hover { color: var(--accent); text-shadow: 0 0 8px rgba(0, 255, 156, 0.5); }
   .card p a { color: var(--accent); text-decoration: none; }
@@ -135,6 +151,8 @@
         <h2>Disk Galaxy Rotation</h2>
         <p>A simulation of galaxy rotation curves, comparing orbital speeds with
         and without a dark matter halo.</p>
+        <p class="prompt">simulate a disk galaxy's rotation side by side, one with a
+        dark matter halo and one without, and plot the rotation curves</p>
         <span class="tag">Simulation</span>
       </a>
     </li>
@@ -142,6 +160,7 @@
       <a class="card" href="mandelbrot.html">
         <h2>Mandelbrot Set</h2>
         <p>An interactive rendering of the Mandelbrot set fractal.</p>
+        <p class="prompt">make an interactive Mandelbrot set viewer in a single HTML page</p>
         <span class="tag">Fractal</span>
       </a>
     </li>
@@ -150,6 +169,8 @@
         <h2>Rolling Race: Ball vs Disc</h2>
         <p>A 3D physics race between a ball and a disc rolling down an incline,
         illustrating how moment of inertia affects acceleration.</p>
+        <p class="prompt">build a 3D simulation of a ball and a disc racing down an
+        incline to show how moment of inertia affects rolling acceleration</p>
         <span class="tag">Physics</span>
       </a>
     </li>
@@ -159,6 +180,8 @@
         <p>A dependency-free Lean 4 formalization of the Hadwiger–Nelson problem:
         the chromatic number of the plane. See the problem itself at
         <a href="https://www.erdosproblems.com/508">erdosproblems.com/508</a>.</p>
+        <p class="prompt">formalize Erdős problem 508 (the chromatic number of the
+        plane) as a self-contained, dependency-free statement in Lean 4</p>
         <span class="tag">Lean 4</span>
       </div>
     </li>
