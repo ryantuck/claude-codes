@@ -112,16 +112,6 @@
     color: var(--accent2);
     text-shadow: 0 0 6px rgba(255, 45, 149, 0.45);
   }
-  .chat-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .chat-link::before { content: "↗ "; }
-  .chat-link:hover { text-decoration: underline; text-shadow: 0 0 8px rgba(0, 255, 156, 0.5); }
   .card h2 a { color: inherit; text-decoration: none; }
   .card h2 a:hover { color: var(--accent); text-shadow: 0 0 8px rgba(0, 255, 156, 0.5); }
   .card p a { color: var(--accent); text-decoration: none; }
@@ -161,10 +151,10 @@
         <h2><a href="galaxy.html">Disk Galaxy Rotation</a></h2>
         <p>A simulation of galaxy rotation curves, comparing orbital speeds with
         and without a dark matter halo.</p>
-        <p class="prompt">simulate a disk galaxy's rotation side by side, one with a
-        dark matter halo and one without, and plot the rotation curves</p>
-        <a class="chat-link" href="https://claude.ai/code/session_01Y5Td7WkN65JSzcxQpasCob">view original chat</a>
-        <br>
+        <p class="prompt">create a standalone html page that produces a simulation
+        of a disk galaxy rotating with approximate dark matter effects and what that
+        simulation would look like without dark matter. javascript can live in a
+        separate imported file.</p>
         <span class="tag">Simulation</span>
       </div>
     </li>
@@ -172,9 +162,8 @@
       <div class="card">
         <h2><a href="mandelbrot.html">Mandelbrot Set</a></h2>
         <p>An interactive rendering of the Mandelbrot set fractal.</p>
-        <p class="prompt">make an interactive Mandelbrot set viewer in a single HTML page</p>
-        <a class="chat-link" href="https://claude.ai/code/session_01Vd4q8KnxJFYHVV89i5jhee">view original chat</a>
-        <br>
+        <p class="prompt">produce an html page that displays the mandelbrot set
+        using javascript</p>
         <span class="tag">Fractal</span>
       </div>
     </li>
@@ -183,10 +172,8 @@
         <h2><a href="rolling-race.html">Rolling Race: Ball vs Disc</a></h2>
         <p>A 3D physics race between a ball and a disc rolling down an incline,
         illustrating how moment of inertia affects acceleration.</p>
-        <p class="prompt">build a 3D simulation of a ball and a disc racing down an
-        incline to show how moment of inertia affects rolling acceleration</p>
-        <a class="chat-link" href="https://claude.ai/code/session_01R34XTnDnehWAaCBDC5RLCr">view original chat</a>
-        <br>
+        <p class="prompt">produce a 3d simulation of a ball and a disc rolling down
+        a slightly inclined surface</p>
         <span class="tag">Physics</span>
       </div>
     </li>
@@ -196,10 +183,9 @@
         <p>A dependency-free Lean 4 formalization of the Hadwiger–Nelson problem:
         the chromatic number of the plane. See the problem itself at
         <a href="https://www.erdosproblems.com/508">erdosproblems.com/508</a>.</p>
-        <p class="prompt">formalize Erdős problem 508 (the chromatic number of the
-        plane) as a self-contained, dependency-free statement in Lean 4</p>
-        <a class="chat-link" href="https://claude.ai/code/session_01VEeRdMFWTeVaZg6kT1M2Up">view original chat</a>
-        <br>
+        <p class="prompt">formalize erdos problem 508's statement
+        (https://www.erdosproblems.com/508) in lean4 and ensure it can build using
+        lake build</p>
         <span class="tag">Lean 4</span>
       </div>
     </li>
